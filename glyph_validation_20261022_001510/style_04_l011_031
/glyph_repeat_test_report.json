@@ -1,0 +1,115 @@
+{
+  "input_image": "/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/baseline/style_04_l011_031.png",
+  "text": "HELLO",
+  "duplicate_character": "L",
+  "image_size": [
+    146,
+    68
+  ],
+  "estimated_background_rgb": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "border_spread_p95": 13.55499806404099,
+  "threshold": 16.0,
+  "effective_segmentation_threshold": 132.0,
+  "character_spans": [
+    {
+      "index": 1,
+      "character": "H",
+      "x_start": 10,
+      "x_end": 33,
+      "cell_x_start": 0,
+      "cell_x_end": 33,
+      "metrics": {
+        "score": 0.4029096851574213,
+        "vertical_coverage": 0.45,
+        "foot_coverage": 0.30434782608695654,
+        "width": 23,
+        "height": 29,
+        "ink_pixels": 253
+      }
+    },
+    {
+      "index": 2,
+      "character": "E",
+      "x_start": 34,
+      "x_end": 56,
+      "cell_x_start": 33,
+      "cell_x_end": 57,
+      "metrics": {
+        "score": 0.9768363636363637,
+        "vertical_coverage": 1.0,
+        "foot_coverage": 0.9545454545454546,
+        "width": 22,
+        "height": 30,
+        "ink_pixels": 366
+      }
+    },
+    {
+      "index": 3,
+      "character": "L",
+      "x_start": 58,
+      "x_end": 85,
+      "cell_x_start": 57,
+      "cell_x_end": 85,
+      "metrics": {
+        "score": 0.9765086419753087,
+        "vertical_coverage": 1.0,
+        "foot_coverage": 0.9629629629629629,
+        "width": 27,
+        "height": 30,
+        "ink_pixels": 329
+      }
+    },
+    {
+      "index": 4,
+      "character": "L",
+      "x_start": 86,
+      "x_end": 133,
+      "cell_x_start": 85,
+      "cell_x_end": 133,
+      "metrics": {
+        "score": 0.9368197292069633,
+        "vertical_coverage": 0.9545454545454546,
+        "foot_coverage": 0.9361702127659575,
+        "width": 47,
+        "height": 32,
+        "ink_pixels": 536
+      }
+    },
+    {
+      "index": 5,
+      "character": "O",
+      "x_start": 134,
+      "x_end": 142,
+      "cell_x_start": 133,
+      "cell_x_end": 146,
+      "metrics": {
+        "score": 0.58355,
+        "vertical_coverage": 0.5714285714285714,
+        "foot_coverage": 0.625,
+        "width": 8,
+        "height": 20,
+        "ink_pixels": 54
+      }
+    }
+  ],
+  "duplicate_indices_one_based": [
+    3,
+    4
+  ],
+  "selected_index_one_based": 3,
+  "selection_score": {
+    "first": 0.9765086419753087,
+    "second": 0.9368197292069633
+  },
+  "note": "Initial geometric L-shape heuristic. Check isolated_glyphs.png and comparison_original_vs_unified.png before considering general use.",
+  "outputs": {
+    "comparison": "/mnt/p5-modeltests/TextCtrl/glyph_validation_20261022_001510/style_04_l011_031\n/comparison_original_vs_unified.png",
+    "isolated_glyphs": "/mnt/p5-modeltests/TextCtrl/glyph_validation_20261022_001510/style_04_l011_031\n/isolated_glyphs.png",
+    "unified_image": "/mnt/p5-modeltests/TextCtrl/glyph_validation_20261022_001510/style_04_l011_031\n/hello_unified.png",
+    "selected_glyph_rgba": "/mnt/p5-modeltests/TextCtrl/glyph_validation_20261022_001510/style_04_l011_031\n/selected_L.png"
+  }
+}
