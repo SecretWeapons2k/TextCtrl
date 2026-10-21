@@ -1,0 +1,121 @@
+run_id	phase	parameter	value	test_id	candidate_index	source_image	source_text	target_text	seed	guidance_scale	start_step	starting_layer	num_inference_steps	status	duration_seconds	output_file	error
+BASE	baseline_existing	baseline	2.0/24/10/50	1	1	a000_000.png	画面比率	HELLO	42	2.0	24	10	50	baseline_existing		/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/baseline/style_01_a000_000.png	
+BASE	baseline_existing	baseline	2.0/24/10/50	2	5	l002_000.png	タイムリミット日目	HELLO	42	2.0	24	10	50	baseline_existing		/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/baseline/style_02_l002_000.png	
+BASE	baseline_existing	baseline	2.0/24/10/50	3	8	l007_042.png	知っているか	HELLO	42	2.0	24	10	50	baseline_existing		/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/baseline/style_03_l007_042.png	
+BASE	baseline_existing	baseline	2.0/24/10/50	4	16	l011_031.png	枕営業	HELLO	42	2.0	24	10	50	baseline_existing		/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/baseline/style_04_l011_031.png	
+BASE	baseline_existing	baseline	2.0/24/10/50	5	21	m000_007.png	尋問進行確認	HELLO	42	2.0	24	10	50	baseline_existing		/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/baseline/style_05_m000_007.png	
+BASE	baseline_existing	baseline	2.0/24/10/50	6	23	m003_013.png	火を見るのは好きか	HELLO	42	2.0	24	10	50	baseline_existing		/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/baseline/style_06_m003_013.png	
+BASE	baseline_existing	baseline	2.0/24/10/50	7	30	m006_013.png	火を見るのは好きか	HELLO	42	2.0	24	10	50	baseline_existing		/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/baseline/style_07_m006_013.png	
+BASE	baseline_existing	baseline	2.0/24/10/50	8	33	n009_010.png	利奈から聞いたの	HELLO	42	2.0	24	10	50	baseline_existing		/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/baseline/style_08_n009_010.png	
+BASE	baseline_existing	baseline	2.0/24/10/50	9	36	o016_020.png	なんですって	HELLO	42	2.0	24	10	50	baseline_existing		/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/baseline/style_09_o016_020.png	
+BASE	baseline_existing	baseline	2.0/24/10/50	10	38	o016_100.png	きゃああっ	HELLO	42	2.0	24	10	50	baseline_existing		/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/baseline/style_10_o016_100.png	
+BASE	baseline_existing	baseline	2.0/24/10/50	11	43	o018_014.png	本当です	HELLO	42	2.0	24	10	50	baseline_existing		/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/baseline/style_11_o018_014.png	
+BASE	baseline_existing	baseline	2.0/24/10/50	12	47	s001_005.png	さくやついたち	HELLO	42	2.0	24	10	50	baseline_existing		/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/baseline/style_12_s001_005.png	
+001	guidance_scale	guidance_scale	1.5	1	1	a000_000.png	画面比率	HELLO	42	1.5	24	10	50	ok	8.613	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_01_a000_000.png	
+002	guidance_scale	guidance_scale	1.5	2	5	l002_000.png	タイムリミット日目	HELLO	42	1.5	24	10	50	ok	7.989	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_02_l002_000.png	
+003	guidance_scale	guidance_scale	1.5	3	8	l007_042.png	知っているか	HELLO	42	1.5	24	10	50	ok	7.999	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_03_l007_042.png	
+004	guidance_scale	guidance_scale	1.5	4	16	l011_031.png	枕営業	HELLO	42	1.5	24	10	50	ok	8.032	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_04_l011_031.png	
+005	guidance_scale	guidance_scale	1.5	5	21	m000_007.png	尋問進行確認	HELLO	42	1.5	24	10	50	ok	8.078	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_05_m000_007.png	
+006	guidance_scale	guidance_scale	1.5	6	23	m003_013.png	火を見るのは好きか	HELLO	42	1.5	24	10	50	ok	8.069	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_06_m003_013.png	
+007	guidance_scale	guidance_scale	1.5	7	30	m006_013.png	火を見るのは好きか	HELLO	42	1.5	24	10	50	ok	8.091	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_07_m006_013.png	
+008	guidance_scale	guidance_scale	1.5	8	33	n009_010.png	利奈から聞いたの	HELLO	42	1.5	24	10	50	ok	8.096	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_08_n009_010.png	
+009	guidance_scale	guidance_scale	1.5	9	36	o016_020.png	なんですって	HELLO	42	1.5	24	10	50	ok	8.098	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_09_o016_020.png	
+010	guidance_scale	guidance_scale	1.5	10	38	o016_100.png	きゃああっ	HELLO	42	1.5	24	10	50	ok	8.101	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_10_o016_100.png	
+011	guidance_scale	guidance_scale	1.5	11	43	o018_014.png	本当です	HELLO	42	1.5	24	10	50	ok	8.122	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_11_o018_014.png	
+012	guidance_scale	guidance_scale	1.5	12	47	s001_005.png	さくやついたち	HELLO	42	1.5	24	10	50	ok	8.137	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_12_s001_005.png	
+013	guidance_scale	guidance_scale	2.5	1	1	a000_000.png	画面比率	HELLO	42	2.5	24	10	50	ok	8.134	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_01_a000_000.png	
+014	guidance_scale	guidance_scale	2.5	2	5	l002_000.png	タイムリミット日目	HELLO	42	2.5	24	10	50	ok	8.133	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_02_l002_000.png	
+015	guidance_scale	guidance_scale	2.5	3	8	l007_042.png	知っているか	HELLO	42	2.5	24	10	50	ok	8.147	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_03_l007_042.png	
+016	guidance_scale	guidance_scale	2.5	4	16	l011_031.png	枕営業	HELLO	42	2.5	24	10	50	ok	8.159	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_04_l011_031.png	
+017	guidance_scale	guidance_scale	2.5	5	21	m000_007.png	尋問進行確認	HELLO	42	2.5	24	10	50	ok	8.158	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_05_m000_007.png	
+018	guidance_scale	guidance_scale	2.5	6	23	m003_013.png	火を見るのは好きか	HELLO	42	2.5	24	10	50	ok	8.175	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_06_m003_013.png	
+019	guidance_scale	guidance_scale	2.5	7	30	m006_013.png	火を見るのは好きか	HELLO	42	2.5	24	10	50	ok	8.159	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_07_m006_013.png	
+020	guidance_scale	guidance_scale	2.5	8	33	n009_010.png	利奈から聞いたの	HELLO	42	2.5	24	10	50	ok	8.178	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_08_n009_010.png	
+021	guidance_scale	guidance_scale	2.5	9	36	o016_020.png	なんですって	HELLO	42	2.5	24	10	50	ok	8.173	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_09_o016_020.png	
+022	guidance_scale	guidance_scale	2.5	10	38	o016_100.png	きゃああっ	HELLO	42	2.5	24	10	50	ok	8.166	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_10_o016_100.png	
+023	guidance_scale	guidance_scale	2.5	11	43	o018_014.png	本当です	HELLO	42	2.5	24	10	50	ok	8.175	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_11_o018_014.png	
+024	guidance_scale	guidance_scale	2.5	12	47	s001_005.png	さくやついたち	HELLO	42	2.5	24	10	50	ok	8.175	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_12_s001_005.png	
+025	guidance_scale	guidance_scale	3.0	1	1	a000_000.png	画面比率	HELLO	42	3.0	24	10	50	ok	8.173	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_01_a000_000.png	
+026	guidance_scale	guidance_scale	3.0	2	5	l002_000.png	タイムリミット日目	HELLO	42	3.0	24	10	50	ok	8.17	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_02_l002_000.png	
+027	guidance_scale	guidance_scale	3.0	3	8	l007_042.png	知っているか	HELLO	42	3.0	24	10	50	ok	8.187	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_03_l007_042.png	
+028	guidance_scale	guidance_scale	3.0	4	16	l011_031.png	枕営業	HELLO	42	3.0	24	10	50	ok	8.192	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_04_l011_031.png	
+029	guidance_scale	guidance_scale	3.0	5	21	m000_007.png	尋問進行確認	HELLO	42	3.0	24	10	50	ok	8.191	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_05_m000_007.png	
+030	guidance_scale	guidance_scale	3.0	6	23	m003_013.png	火を見るのは好きか	HELLO	42	3.0	24	10	50	ok	8.198	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_06_m003_013.png	
+031	guidance_scale	guidance_scale	3.0	7	30	m006_013.png	火を見るのは好きか	HELLO	42	3.0	24	10	50	ok	8.192	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_07_m006_013.png	
+032	guidance_scale	guidance_scale	3.0	8	33	n009_010.png	利奈から聞いたの	HELLO	42	3.0	24	10	50	ok	8.2	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_08_n009_010.png	
+033	guidance_scale	guidance_scale	3.0	9	36	o016_020.png	なんですって	HELLO	42	3.0	24	10	50	ok	8.194	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_09_o016_020.png	
+034	guidance_scale	guidance_scale	3.0	10	38	o016_100.png	きゃああっ	HELLO	42	3.0	24	10	50	ok	8.204	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_10_o016_100.png	
+035	guidance_scale	guidance_scale	3.0	11	43	o018_014.png	本当です	HELLO	42	3.0	24	10	50	ok	8.197	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_11_o018_014.png	
+036	guidance_scale	guidance_scale	3.0	12	47	s001_005.png	さくやついたち	HELLO	42	3.0	24	10	50	ok	8.184	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_12_s001_005.png	
+037	start_step	start_step	16	1	1	a000_000.png	画面比率	HELLO	42	2.0	16	10	50	ok	8.226	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/16/style_01_a000_000.png	
+038	start_step	start_step	16	3	8	l007_042.png	知っているか	HELLO	42	2.0	16	10	50	ok	8.227	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/16/style_03_l007_042.png	
+039	start_step	start_step	16	4	16	l011_031.png	枕営業	HELLO	42	2.0	16	10	50	ok	8.233	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/16/style_04_l011_031.png	
+040	start_step	start_step	16	5	21	m000_007.png	尋問進行確認	HELLO	42	2.0	16	10	50	ok	8.233	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/16/style_05_m000_007.png	
+041	start_step	start_step	16	8	33	n009_010.png	利奈から聞いたの	HELLO	42	2.0	16	10	50	ok	8.228	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/16/style_08_n009_010.png	
+042	start_step	start_step	16	10	38	o016_100.png	きゃああっ	HELLO	42	2.0	16	10	50	ok	8.229	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/16/style_10_o016_100.png	
+043	start_step	start_step	20	1	1	a000_000.png	画面比率	HELLO	42	2.0	20	10	50	ok	8.234	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/20/style_01_a000_000.png	
+044	start_step	start_step	20	3	8	l007_042.png	知っているか	HELLO	42	2.0	20	10	50	ok	8.224	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/20/style_03_l007_042.png	
+045	start_step	start_step	20	4	16	l011_031.png	枕営業	HELLO	42	2.0	20	10	50	ok	8.252	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/20/style_04_l011_031.png	
+046	start_step	start_step	20	5	21	m000_007.png	尋問進行確認	HELLO	42	2.0	20	10	50	ok	8.231	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/20/style_05_m000_007.png	
+047	start_step	start_step	20	8	33	n009_010.png	利奈から聞いたの	HELLO	42	2.0	20	10	50	ok	8.249	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/20/style_08_n009_010.png	
+048	start_step	start_step	20	10	38	o016_100.png	きゃああっ	HELLO	42	2.0	20	10	50	ok	8.234	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/20/style_10_o016_100.png	
+049	start_step	start_step	28	1	1	a000_000.png	画面比率	HELLO	42	2.0	28	10	50	ok	8.226	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/28/style_01_a000_000.png	
+050	start_step	start_step	28	3	8	l007_042.png	知っているか	HELLO	42	2.0	28	10	50	ok	8.216	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/28/style_03_l007_042.png	
+051	start_step	start_step	28	4	16	l011_031.png	枕営業	HELLO	42	2.0	28	10	50	ok	8.213	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/28/style_04_l011_031.png	
+052	start_step	start_step	28	5	21	m000_007.png	尋問進行確認	HELLO	42	2.0	28	10	50	ok	8.219	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/28/style_05_m000_007.png	
+053	start_step	start_step	28	8	33	n009_010.png	利奈から聞いたの	HELLO	42	2.0	28	10	50	ok	8.222	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/28/style_08_n009_010.png	
+054	start_step	start_step	28	10	38	o016_100.png	きゃああっ	HELLO	42	2.0	28	10	50	ok	8.213	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/28/style_10_o016_100.png	
+055	start_step	start_step	32	1	1	a000_000.png	画面比率	HELLO	42	2.0	32	10	50	ok	8.209	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/32/style_01_a000_000.png	
+056	start_step	start_step	32	3	8	l007_042.png	知っているか	HELLO	42	2.0	32	10	50	ok	8.218	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/32/style_03_l007_042.png	
+057	start_step	start_step	32	4	16	l011_031.png	枕営業	HELLO	42	2.0	32	10	50	ok	8.205	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/32/style_04_l011_031.png	
+058	start_step	start_step	32	5	21	m000_007.png	尋問進行確認	HELLO	42	2.0	32	10	50	ok	8.217	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/32/style_05_m000_007.png	
+059	start_step	start_step	32	8	33	n009_010.png	利奈から聞いたの	HELLO	42	2.0	32	10	50	ok	8.216	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/32/style_08_n009_010.png	
+060	start_step	start_step	32	10	38	o016_100.png	きゃああっ	HELLO	42	2.0	32	10	50	ok	8.205	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/32/style_10_o016_100.png	
+061	starting_layer	starting_layer	6	1	1	a000_000.png	画面比率	HELLO	42	2.0	24	6	50	ok	8.259	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/6/style_01_a000_000.png	
+062	starting_layer	starting_layer	6	3	8	l007_042.png	知っているか	HELLO	42	2.0	24	6	50	ok	8.256	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/6/style_03_l007_042.png	
+063	starting_layer	starting_layer	6	4	16	l011_031.png	枕営業	HELLO	42	2.0	24	6	50	ok	8.244	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/6/style_04_l011_031.png	
+064	starting_layer	starting_layer	6	5	21	m000_007.png	尋問進行確認	HELLO	42	2.0	24	6	50	ok	8.252	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/6/style_05_m000_007.png	
+065	starting_layer	starting_layer	6	8	33	n009_010.png	利奈から聞いたの	HELLO	42	2.0	24	6	50	ok	8.273	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/6/style_08_n009_010.png	
+066	starting_layer	starting_layer	6	10	38	o016_100.png	きゃああっ	HELLO	42	2.0	24	6	50	ok	8.264	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/6/style_10_o016_100.png	
+067	starting_layer	starting_layer	8	1	1	a000_000.png	画面比率	HELLO	42	2.0	24	8	50	ok	8.255	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/8/style_01_a000_000.png	
+068	starting_layer	starting_layer	8	3	8	l007_042.png	知っているか	HELLO	42	2.0	24	8	50	ok	8.244	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/8/style_03_l007_042.png	
+069	starting_layer	starting_layer	8	4	16	l011_031.png	枕営業	HELLO	42	2.0	24	8	50	ok	8.25	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/8/style_04_l011_031.png	
+070	starting_layer	starting_layer	8	5	21	m000_007.png	尋問進行確認	HELLO	42	2.0	24	8	50	ok	8.245	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/8/style_05_m000_007.png	
+071	starting_layer	starting_layer	8	8	33	n009_010.png	利奈から聞いたの	HELLO	42	2.0	24	8	50	ok	8.248	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/8/style_08_n009_010.png	
+072	starting_layer	starting_layer	8	10	38	o016_100.png	きゃああっ	HELLO	42	2.0	24	8	50	ok	8.269	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/8/style_10_o016_100.png	
+073	starting_layer	starting_layer	12	1	1	a000_000.png	画面比率	HELLO	42	2.0	24	12	50	ok	8.232	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/12/style_01_a000_000.png	
+074	starting_layer	starting_layer	12	3	8	l007_042.png	知っているか	HELLO	42	2.0	24	12	50	ok	8.227	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/12/style_03_l007_042.png	
+075	starting_layer	starting_layer	12	4	16	l011_031.png	枕営業	HELLO	42	2.0	24	12	50	ok	8.236	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/12/style_04_l011_031.png	
+076	starting_layer	starting_layer	12	5	21	m000_007.png	尋問進行確認	HELLO	42	2.0	24	12	50	ok	8.231	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/12/style_05_m000_007.png	
+077	starting_layer	starting_layer	12	8	33	n009_010.png	利奈から聞いたの	HELLO	42	2.0	24	12	50	ok	8.244	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/12/style_08_n009_010.png	
+078	starting_layer	starting_layer	12	10	38	o016_100.png	きゃああっ	HELLO	42	2.0	24	12	50	ok	8.229	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/12/style_10_o016_100.png	
+079	starting_layer	starting_layer	14	1	1	a000_000.png	画面比率	HELLO	42	2.0	24	14	50	ok	8.199	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/14/style_01_a000_000.png	
+080	starting_layer	starting_layer	14	3	8	l007_042.png	知っているか	HELLO	42	2.0	24	14	50	ok	8.168	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/14/style_03_l007_042.png	
+081	starting_layer	starting_layer	14	4	16	l011_031.png	枕営業	HELLO	42	2.0	24	14	50	ok	8.188	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/14/style_04_l011_031.png	
+082	starting_layer	starting_layer	14	5	21	m000_007.png	尋問進行確認	HELLO	42	2.0	24	14	50	ok	8.204	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/14/style_05_m000_007.png	
+083	starting_layer	starting_layer	14	8	33	n009_010.png	利奈から聞いたの	HELLO	42	2.0	24	14	50	ok	8.21	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/14/style_08_n009_010.png	
+084	starting_layer	starting_layer	14	10	38	o016_100.png	きゃああっ	HELLO	42	2.0	24	14	50	ok	8.225	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/14/style_10_o016_100.png	
+085	num_inference_steps	num_inference_steps	30	1	1	a000_000.png	画面比率	HELLO	42	2.0	24	10	30	ok	5.038	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/30/style_01_a000_000.png	
+086	num_inference_steps	num_inference_steps	30	3	8	l007_042.png	知っているか	HELLO	42	2.0	24	10	30	ok	5.059	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/30/style_03_l007_042.png	
+087	num_inference_steps	num_inference_steps	30	4	16	l011_031.png	枕営業	HELLO	42	2.0	24	10	30	ok	5.048	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/30/style_04_l011_031.png	
+088	num_inference_steps	num_inference_steps	30	5	21	m000_007.png	尋問進行確認	HELLO	42	2.0	24	10	30	ok	5.066	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/30/style_05_m000_007.png	
+089	num_inference_steps	num_inference_steps	30	8	33	n009_010.png	利奈から聞いたの	HELLO	42	2.0	24	10	30	ok	5.068	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/30/style_08_n009_010.png	
+090	num_inference_steps	num_inference_steps	30	10	38	o016_100.png	きゃああっ	HELLO	42	2.0	24	10	30	ok	5.046	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/30/style_10_o016_100.png	
+091	num_inference_steps	num_inference_steps	40	1	1	a000_000.png	画面比率	HELLO	42	2.0	24	10	40	ok	6.656	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/40/style_01_a000_000.png	
+092	num_inference_steps	num_inference_steps	40	3	8	l007_042.png	知っているか	HELLO	42	2.0	24	10	40	ok	6.646	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/40/style_03_l007_042.png	
+093	num_inference_steps	num_inference_steps	40	4	16	l011_031.png	枕営業	HELLO	42	2.0	24	10	40	ok	6.672	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/40/style_04_l011_031.png	
+094	num_inference_steps	num_inference_steps	40	5	21	m000_007.png	尋問進行確認	HELLO	42	2.0	24	10	40	ok	6.642	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/40/style_05_m000_007.png	
+095	num_inference_steps	num_inference_steps	40	8	33	n009_010.png	利奈から聞いたの	HELLO	42	2.0	24	10	40	ok	6.646	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/40/style_08_n009_010.png	
+096	num_inference_steps	num_inference_steps	40	10	38	o016_100.png	きゃああっ	HELLO	42	2.0	24	10	40	ok	6.642	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/40/style_10_o016_100.png	
+097	num_inference_steps	num_inference_steps	60	1	1	a000_000.png	画面比率	HELLO	42	2.0	24	10	60	ok	9.841	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/60/style_01_a000_000.png	
+098	num_inference_steps	num_inference_steps	60	3	8	l007_042.png	知っているか	HELLO	42	2.0	24	10	60	ok	9.821	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/60/style_03_l007_042.png	
+099	num_inference_steps	num_inference_steps	60	4	16	l011_031.png	枕営業	HELLO	42	2.0	24	10	60	ok	9.839	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/60/style_04_l011_031.png	
+100	num_inference_steps	num_inference_steps	60	5	21	m000_007.png	尋問進行確認	HELLO	42	2.0	24	10	60	ok	9.851	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/60/style_05_m000_007.png	
+101	num_inference_steps	num_inference_steps	60	8	33	n009_010.png	利奈から聞いたの	HELLO	42	2.0	24	10	60	ok	9.842	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/60/style_08_n009_010.png	
+102	num_inference_steps	num_inference_steps	60	10	38	o016_100.png	きゃああっ	HELLO	42	2.0	24	10	60	ok	9.833	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/60/style_10_o016_100.png	
+103	num_inference_steps	num_inference_steps	75	1	1	a000_000.png	画面比率	HELLO	42	2.0	24	10	75	ok	12.234	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/75/style_01_a000_000.png	
+104	num_inference_steps	num_inference_steps	75	3	8	l007_042.png	知っているか	HELLO	42	2.0	24	10	75	ok	12.246	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/75/style_03_l007_042.png	
+105	num_inference_steps	num_inference_steps	75	4	16	l011_031.png	枕営業	HELLO	42	2.0	24	10	75	ok	12.244	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/75/style_04_l011_031.png	
+106	num_inference_steps	num_inference_steps	75	5	21	m000_007.png	尋問進行確認	HELLO	42	2.0	24	10	75	ok	12.261	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/75/style_05_m000_007.png	
+107	num_inference_steps	num_inference_steps	75	8	33	n009_010.png	利奈から聞いたの	HELLO	42	2.0	24	10	75	ok	12.24	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/75/style_08_n009_010.png	
+108	num_inference_steps	num_inference_steps	75	10	38	o016_100.png	きゃああっ	HELLO	42	2.0	24	10	75	ok	12.232	/mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/75/style_10_o016_100.png	

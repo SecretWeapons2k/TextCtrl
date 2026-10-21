@@ -1,0 +1,9 @@
+Loaded state_dict from [weights/sd/unet/diffusion_pytorch_model.safetensors]
+AutoencoderKL has 83.65 M params.
+ControlUNetModel has 859.52 M params.
+LabelEncoder has 66.24 M params.
+Loaded model config from [configs/inference.yaml]
+Loaded state_dict from [weights/model.pth]
+Global seed set to 42
+  0%|          | 0/1 [00:00<?, ?it/s]MIOpen(HIP): Warning [ParseAndLoadDb] File is unreadable: "/mnt/p5-modeltests/TextCtrl/.venv-gfx1030/lib/python3.11/site-packages/_rocm_sdk_libraries/share/miopen/db/gfx1030_40.HIP.fdb.txt"
+100%|██████████| 1/1 [00:08<00:00,  8.56s/it]100%|██████████| 1/1 [00:08<00:00,  8.56s/it]

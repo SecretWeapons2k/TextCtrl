@@ -1,0 +1,13 @@
+test_id	candidate_index	source_image	anchor_id	source_text	target_text	input_file
+1	1	a000_000.png	a000_000#r1c1-body-2	画面比率	HELLO	style_01_a000_000.png
+2	5	l002_000.png	l002_000#r1c1-body-2	タイムリミット日目	HELLO	style_02_l002_000.png
+3	8	l007_042.png	l007_042#r1c1-body-2	知っているか	HELLO	style_03_l007_042.png
+4	16	l011_031.png	l011_031#r1c1-body-1	枕営業	HELLO	style_04_l011_031.png
+5	21	m000_007.png	m000_007#r1c1-body-1	尋問進行確認	HELLO	style_05_m000_007.png
+6	23	m003_013.png	m003_013#r2c1-body-1	火を見るのは好きか	HELLO	style_06_m003_013.png
+7	30	m006_013.png	m006_013#r1c1-body-1	火を見るのは好きか	HELLO	style_07_m006_013.png
+8	33	n009_010.png	n009_010#r1c1-body-1	利奈から聞いたの	HELLO	style_08_n009_010.png
+9	36	o016_020.png	o016_020#r1c1-body-1	なんですって	HELLO	style_09_o016_020.png
+10	38	o016_100.png	o016_100#r1c1-body-1	きゃああっ	HELLO	style_10_o016_100.png
+11	43	o018_014.png	o018_014#r1c1-body-1	本当です	HELLO	style_11_o018_014.png
+12	47	s001_005.png	s001_005#r1c1-body-8	さくやついたち	HELLO	style_12_s001_005.png

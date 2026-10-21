@@ -1,0 +1,2084 @@
+========== SWEEP-PLAN ==========
+Baseline-Fälle vorhanden: 12
+Neue Generierungen: 108
+guidance_scale: 36
+start_step: 24
+starting_layer: 24
+num_inference_steps: 24
+Seed: 42
+Ausgabe: /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552
+
+========== MODELL LADEN ==========
+Loaded state_dict from [weights/sd/unet/diffusion_pytorch_model.safetensors]
+AutoencoderKL has 83.65 M params.
+ControlUNetModel has 859.52 M params.
+LabelEncoder has 66.24 M params.
+Loaded model config from [configs/inference.yaml]
+Loaded state_dict from [weights/model.pth]
+Checkpoint geladen; fehlende Schlüssel: 394 | unerwartete Schlüssel: 0
+
+[SWEEP 001/108] guidance_scale=1.5 | Test 1/12: a000_000.png
+  Parameter: guidance=1.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+MIOpen(HIP): Warning [ParseAndLoadDb] File is unreadable: "/mnt/p5-modeltests/TextCtrl/.venv-gfx1030/lib/python3.11/site-packages/_rocm_sdk_libraries/share/miopen/db/gfx1030_40.HIP.fdb.txt"
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 1/108 erfolgreich | 8.6 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_01_a000_000.png
+
+[SWEEP 002/108] guidance_scale=1.5 | Test 2/12: l002_000.png
+  Parameter: guidance=1.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 2/108 erfolgreich | 8.0 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_02_l002_000.png
+
+[SWEEP 003/108] guidance_scale=1.5 | Test 3/12: l007_042.png
+  Parameter: guidance=1.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 3/108 erfolgreich | 8.0 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_03_l007_042.png
+
+[SWEEP 004/108] guidance_scale=1.5 | Test 4/12: l011_031.png
+  Parameter: guidance=1.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 4/108 erfolgreich | 8.0 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_04_l011_031.png
+
+[SWEEP 005/108] guidance_scale=1.5 | Test 5/12: m000_007.png
+  Parameter: guidance=1.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 5/108 erfolgreich | 8.1 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_05_m000_007.png
+
+[SWEEP 006/108] guidance_scale=1.5 | Test 6/12: m003_013.png
+  Parameter: guidance=1.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 6/108 erfolgreich | 8.1 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_06_m003_013.png
+
+[SWEEP 007/108] guidance_scale=1.5 | Test 7/12: m006_013.png
+  Parameter: guidance=1.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 7/108 erfolgreich | 8.1 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_07_m006_013.png
+
+[SWEEP 008/108] guidance_scale=1.5 | Test 8/12: n009_010.png
+  Parameter: guidance=1.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 8/108 erfolgreich | 8.1 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_08_n009_010.png
+
+[SWEEP 009/108] guidance_scale=1.5 | Test 9/12: o016_020.png
+  Parameter: guidance=1.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 9/108 erfolgreich | 8.1 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_09_o016_020.png
+
+[SWEEP 010/108] guidance_scale=1.5 | Test 10/12: o016_100.png
+  Parameter: guidance=1.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 10/108 erfolgreich | 8.1 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_10_o016_100.png
+
+[SWEEP 011/108] guidance_scale=1.5 | Test 11/12: o018_014.png
+  Parameter: guidance=1.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 11/108 erfolgreich | 8.1 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_11_o018_014.png
+
+[SWEEP 012/108] guidance_scale=1.5 | Test 12/12: s001_005.png
+  Parameter: guidance=1.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 12/108 erfolgreich | 8.1 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/1p5/style_12_s001_005.png
+
+[SWEEP 013/108] guidance_scale=2.5 | Test 1/12: a000_000.png
+  Parameter: guidance=2.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 13/108 erfolgreich | 8.1 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_01_a000_000.png
+
+[SWEEP 014/108] guidance_scale=2.5 | Test 2/12: l002_000.png
+  Parameter: guidance=2.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 14/108 erfolgreich | 8.1 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_02_l002_000.png
+
+[SWEEP 015/108] guidance_scale=2.5 | Test 3/12: l007_042.png
+  Parameter: guidance=2.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 15/108 erfolgreich | 8.1 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_03_l007_042.png
+
+[SWEEP 016/108] guidance_scale=2.5 | Test 4/12: l011_031.png
+  Parameter: guidance=2.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 16/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_04_l011_031.png
+
+[SWEEP 017/108] guidance_scale=2.5 | Test 5/12: m000_007.png
+  Parameter: guidance=2.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 17/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_05_m000_007.png
+
+[SWEEP 018/108] guidance_scale=2.5 | Test 6/12: m003_013.png
+  Parameter: guidance=2.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 18/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_06_m003_013.png
+
+[SWEEP 019/108] guidance_scale=2.5 | Test 7/12: m006_013.png
+  Parameter: guidance=2.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 19/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_07_m006_013.png
+
+[SWEEP 020/108] guidance_scale=2.5 | Test 8/12: n009_010.png
+  Parameter: guidance=2.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 20/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_08_n009_010.png
+
+[SWEEP 021/108] guidance_scale=2.5 | Test 9/12: o016_020.png
+  Parameter: guidance=2.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 21/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_09_o016_020.png
+
+[SWEEP 022/108] guidance_scale=2.5 | Test 10/12: o016_100.png
+  Parameter: guidance=2.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 22/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_10_o016_100.png
+
+[SWEEP 023/108] guidance_scale=2.5 | Test 11/12: o018_014.png
+  Parameter: guidance=2.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 23/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_11_o018_014.png
+
+[SWEEP 024/108] guidance_scale=2.5 | Test 12/12: s001_005.png
+  Parameter: guidance=2.5 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 24/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/2p5/style_12_s001_005.png
+
+[SWEEP 025/108] guidance_scale=3.0 | Test 1/12: a000_000.png
+  Parameter: guidance=3.0 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 25/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_01_a000_000.png
+
+[SWEEP 026/108] guidance_scale=3.0 | Test 2/12: l002_000.png
+  Parameter: guidance=3.0 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 26/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_02_l002_000.png
+
+[SWEEP 027/108] guidance_scale=3.0 | Test 3/12: l007_042.png
+  Parameter: guidance=3.0 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 27/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_03_l007_042.png
+
+[SWEEP 028/108] guidance_scale=3.0 | Test 4/12: l011_031.png
+  Parameter: guidance=3.0 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 28/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_04_l011_031.png
+
+[SWEEP 029/108] guidance_scale=3.0 | Test 5/12: m000_007.png
+  Parameter: guidance=3.0 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 29/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_05_m000_007.png
+
+[SWEEP 030/108] guidance_scale=3.0 | Test 6/12: m003_013.png
+  Parameter: guidance=3.0 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 30/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_06_m003_013.png
+
+[SWEEP 031/108] guidance_scale=3.0 | Test 7/12: m006_013.png
+  Parameter: guidance=3.0 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 31/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_07_m006_013.png
+
+[SWEEP 032/108] guidance_scale=3.0 | Test 8/12: n009_010.png
+  Parameter: guidance=3.0 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 32/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_08_n009_010.png
+
+[SWEEP 033/108] guidance_scale=3.0 | Test 9/12: o016_020.png
+  Parameter: guidance=3.0 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 33/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_09_o016_020.png
+
+[SWEEP 034/108] guidance_scale=3.0 | Test 10/12: o016_100.png
+  Parameter: guidance=3.0 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 34/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_10_o016_100.png
+
+[SWEEP 035/108] guidance_scale=3.0 | Test 11/12: o018_014.png
+  Parameter: guidance=3.0 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 35/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_11_o018_014.png
+
+[SWEEP 036/108] guidance_scale=3.0 | Test 12/12: s001_005.png
+  Parameter: guidance=3.0 start_step=24 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 36/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/guidance_scale/3/style_12_s001_005.png
+
+[SWEEP 037/108] start_step=16 | Test 1/12: a000_000.png
+  Parameter: guidance=2.0 start_step=16 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 37/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/16/style_01_a000_000.png
+
+[SWEEP 038/108] start_step=16 | Test 3/12: l007_042.png
+  Parameter: guidance=2.0 start_step=16 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 38/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/16/style_03_l007_042.png
+
+[SWEEP 039/108] start_step=16 | Test 4/12: l011_031.png
+  Parameter: guidance=2.0 start_step=16 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 39/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/16/style_04_l011_031.png
+
+[SWEEP 040/108] start_step=16 | Test 5/12: m000_007.png
+  Parameter: guidance=2.0 start_step=16 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 40/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/16/style_05_m000_007.png
+
+[SWEEP 041/108] start_step=16 | Test 8/12: n009_010.png
+  Parameter: guidance=2.0 start_step=16 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 41/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/16/style_08_n009_010.png
+
+[SWEEP 042/108] start_step=16 | Test 10/12: o016_100.png
+  Parameter: guidance=2.0 start_step=16 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 42/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/16/style_10_o016_100.png
+
+[SWEEP 043/108] start_step=20 | Test 1/12: a000_000.png
+  Parameter: guidance=2.0 start_step=20 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 43/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/20/style_01_a000_000.png
+
+[SWEEP 044/108] start_step=20 | Test 3/12: l007_042.png
+  Parameter: guidance=2.0 start_step=20 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 44/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/20/style_03_l007_042.png
+
+[SWEEP 045/108] start_step=20 | Test 4/12: l011_031.png
+  Parameter: guidance=2.0 start_step=20 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 45/108 erfolgreich | 8.3 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/20/style_04_l011_031.png
+
+[SWEEP 046/108] start_step=20 | Test 5/12: m000_007.png
+  Parameter: guidance=2.0 start_step=20 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 46/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/20/style_05_m000_007.png
+
+[SWEEP 047/108] start_step=20 | Test 8/12: n009_010.png
+  Parameter: guidance=2.0 start_step=20 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 47/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/20/style_08_n009_010.png
+
+[SWEEP 048/108] start_step=20 | Test 10/12: o016_100.png
+  Parameter: guidance=2.0 start_step=20 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 48/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/20/style_10_o016_100.png
+
+[SWEEP 049/108] start_step=28 | Test 1/12: a000_000.png
+  Parameter: guidance=2.0 start_step=28 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 49/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/28/style_01_a000_000.png
+
+[SWEEP 050/108] start_step=28 | Test 3/12: l007_042.png
+  Parameter: guidance=2.0 start_step=28 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 50/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/28/style_03_l007_042.png
+
+[SWEEP 051/108] start_step=28 | Test 4/12: l011_031.png
+  Parameter: guidance=2.0 start_step=28 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 51/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/28/style_04_l011_031.png
+
+[SWEEP 052/108] start_step=28 | Test 5/12: m000_007.png
+  Parameter: guidance=2.0 start_step=28 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 52/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/28/style_05_m000_007.png
+
+[SWEEP 053/108] start_step=28 | Test 8/12: n009_010.png
+  Parameter: guidance=2.0 start_step=28 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 53/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/28/style_08_n009_010.png
+
+[SWEEP 054/108] start_step=28 | Test 10/12: o016_100.png
+  Parameter: guidance=2.0 start_step=28 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 54/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/28/style_10_o016_100.png
+
+[SWEEP 055/108] start_step=32 | Test 1/12: a000_000.png
+  Parameter: guidance=2.0 start_step=32 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 55/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/32/style_01_a000_000.png
+
+[SWEEP 056/108] start_step=32 | Test 3/12: l007_042.png
+  Parameter: guidance=2.0 start_step=32 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 56/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/32/style_03_l007_042.png
+
+[SWEEP 057/108] start_step=32 | Test 4/12: l011_031.png
+  Parameter: guidance=2.0 start_step=32 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 57/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/32/style_04_l011_031.png
+
+[SWEEP 058/108] start_step=32 | Test 5/12: m000_007.png
+  Parameter: guidance=2.0 start_step=32 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 58/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/32/style_05_m000_007.png
+
+[SWEEP 059/108] start_step=32 | Test 8/12: n009_010.png
+  Parameter: guidance=2.0 start_step=32 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 59/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/32/style_08_n009_010.png
+
+[SWEEP 060/108] start_step=32 | Test 10/12: o016_100.png
+  Parameter: guidance=2.0 start_step=32 start_layer=10 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 60/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/start_step/32/style_10_o016_100.png
+
+[SWEEP 061/108] starting_layer=6 | Test 1/12: a000_000.png
+  Parameter: guidance=2.0 start_step=24 start_layer=6 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 61/108 erfolgreich | 8.3 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/6/style_01_a000_000.png
+
+[SWEEP 062/108] starting_layer=6 | Test 3/12: l007_042.png
+  Parameter: guidance=2.0 start_step=24 start_layer=6 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 62/108 erfolgreich | 8.3 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/6/style_03_l007_042.png
+
+[SWEEP 063/108] starting_layer=6 | Test 4/12: l011_031.png
+  Parameter: guidance=2.0 start_step=24 start_layer=6 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 63/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/6/style_04_l011_031.png
+
+[SWEEP 064/108] starting_layer=6 | Test 5/12: m000_007.png
+  Parameter: guidance=2.0 start_step=24 start_layer=6 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 64/108 erfolgreich | 8.3 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/6/style_05_m000_007.png
+
+[SWEEP 065/108] starting_layer=6 | Test 8/12: n009_010.png
+  Parameter: guidance=2.0 start_step=24 start_layer=6 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 65/108 erfolgreich | 8.3 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/6/style_08_n009_010.png
+
+[SWEEP 066/108] starting_layer=6 | Test 10/12: o016_100.png
+  Parameter: guidance=2.0 start_step=24 start_layer=6 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 66/108 erfolgreich | 8.3 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/6/style_10_o016_100.png
+
+[SWEEP 067/108] starting_layer=8 | Test 1/12: a000_000.png
+  Parameter: guidance=2.0 start_step=24 start_layer=8 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 67/108 erfolgreich | 8.3 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/8/style_01_a000_000.png
+
+[SWEEP 068/108] starting_layer=8 | Test 3/12: l007_042.png
+  Parameter: guidance=2.0 start_step=24 start_layer=8 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 68/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/8/style_03_l007_042.png
+
+[SWEEP 069/108] starting_layer=8 | Test 4/12: l011_031.png
+  Parameter: guidance=2.0 start_step=24 start_layer=8 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 69/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/8/style_04_l011_031.png
+
+[SWEEP 070/108] starting_layer=8 | Test 5/12: m000_007.png
+  Parameter: guidance=2.0 start_step=24 start_layer=8 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 70/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/8/style_05_m000_007.png
+
+[SWEEP 071/108] starting_layer=8 | Test 8/12: n009_010.png
+  Parameter: guidance=2.0 start_step=24 start_layer=8 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 71/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/8/style_08_n009_010.png
+
+[SWEEP 072/108] starting_layer=8 | Test 10/12: o016_100.png
+  Parameter: guidance=2.0 start_step=24 start_layer=8 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 72/108 erfolgreich | 8.3 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/8/style_10_o016_100.png
+
+[SWEEP 073/108] starting_layer=12 | Test 1/12: a000_000.png
+  Parameter: guidance=2.0 start_step=24 start_layer=12 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 73/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/12/style_01_a000_000.png
+
+[SWEEP 074/108] starting_layer=12 | Test 3/12: l007_042.png
+  Parameter: guidance=2.0 start_step=24 start_layer=12 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 74/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/12/style_03_l007_042.png
+
+[SWEEP 075/108] starting_layer=12 | Test 4/12: l011_031.png
+  Parameter: guidance=2.0 start_step=24 start_layer=12 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 75/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/12/style_04_l011_031.png
+
+[SWEEP 076/108] starting_layer=12 | Test 5/12: m000_007.png
+  Parameter: guidance=2.0 start_step=24 start_layer=12 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 76/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/12/style_05_m000_007.png
+
+[SWEEP 077/108] starting_layer=12 | Test 8/12: n009_010.png
+  Parameter: guidance=2.0 start_step=24 start_layer=12 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 77/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/12/style_08_n009_010.png
+
+[SWEEP 078/108] starting_layer=12 | Test 10/12: o016_100.png
+  Parameter: guidance=2.0 start_step=24 start_layer=12 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 78/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/12/style_10_o016_100.png
+
+[SWEEP 079/108] starting_layer=14 | Test 1/12: a000_000.png
+  Parameter: guidance=2.0 start_step=24 start_layer=14 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 79/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/14/style_01_a000_000.png
+
+[SWEEP 080/108] starting_layer=14 | Test 3/12: l007_042.png
+  Parameter: guidance=2.0 start_step=24 start_layer=14 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 80/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/14/style_03_l007_042.png
+
+[SWEEP 081/108] starting_layer=14 | Test 4/12: l011_031.png
+  Parameter: guidance=2.0 start_step=24 start_layer=14 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 81/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/14/style_04_l011_031.png
+
+[SWEEP 082/108] starting_layer=14 | Test 5/12: m000_007.png
+  Parameter: guidance=2.0 start_step=24 start_layer=14 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 82/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/14/style_05_m000_007.png
+
+[SWEEP 083/108] starting_layer=14 | Test 8/12: n009_010.png
+  Parameter: guidance=2.0 start_step=24 start_layer=14 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 83/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/14/style_08_n009_010.png
+
+[SWEEP 084/108] starting_layer=14 | Test 10/12: o016_100.png
+  Parameter: guidance=2.0 start_step=24 start_layer=14 steps=50
+Global seed set to 42
+[TextCtrl progress] Inversion 1/51
+[TextCtrl progress] Inversion 10/51
+[TextCtrl progress] Inversion 20/51
+[TextCtrl progress] Inversion 30/51
+[TextCtrl progress] Inversion 40/51
+[TextCtrl progress] Inversion 50/51
+[TextCtrl progress] Inversion 51/51
+[TextCtrl progress] Generierung 1/51
+[TextCtrl progress] Generierung 10/51
+[TextCtrl progress] Generierung 20/51
+[TextCtrl progress] Generierung 30/51
+[TextCtrl progress] Generierung 40/51
+[TextCtrl progress] Generierung 50/51
+[TextCtrl progress] Generierung 51/51
+[SWEEP RESULT] OK | 84/108 erfolgreich | 8.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/starting_layer/14/style_10_o016_100.png
+
+[SWEEP 085/108] num_inference_steps=30 | Test 1/12: a000_000.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=30
+Global seed set to 42
+[TextCtrl progress] Inversion 1/31
+[TextCtrl progress] Inversion 10/31
+[TextCtrl progress] Inversion 20/31
+[TextCtrl progress] Inversion 30/31
+[TextCtrl progress] Inversion 31/31
+[TextCtrl progress] Generierung 1/31
+[TextCtrl progress] Generierung 10/31
+[TextCtrl progress] Generierung 20/31
+[TextCtrl progress] Generierung 30/31
+[TextCtrl progress] Generierung 31/31
+[SWEEP RESULT] OK | 85/108 erfolgreich | 5.0 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/30/style_01_a000_000.png
+
+[SWEEP 086/108] num_inference_steps=30 | Test 3/12: l007_042.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=30
+Global seed set to 42
+[TextCtrl progress] Inversion 1/31
+[TextCtrl progress] Inversion 10/31
+[TextCtrl progress] Inversion 20/31
+[TextCtrl progress] Inversion 30/31
+[TextCtrl progress] Inversion 31/31
+[TextCtrl progress] Generierung 1/31
+[TextCtrl progress] Generierung 10/31
+[TextCtrl progress] Generierung 20/31
+[TextCtrl progress] Generierung 30/31
+[TextCtrl progress] Generierung 31/31
+[SWEEP RESULT] OK | 86/108 erfolgreich | 5.1 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/30/style_03_l007_042.png
+
+[SWEEP 087/108] num_inference_steps=30 | Test 4/12: l011_031.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=30
+Global seed set to 42
+[TextCtrl progress] Inversion 1/31
+[TextCtrl progress] Inversion 10/31
+[TextCtrl progress] Inversion 20/31
+[TextCtrl progress] Inversion 30/31
+[TextCtrl progress] Inversion 31/31
+[TextCtrl progress] Generierung 1/31
+[TextCtrl progress] Generierung 10/31
+[TextCtrl progress] Generierung 20/31
+[TextCtrl progress] Generierung 30/31
+[TextCtrl progress] Generierung 31/31
+[SWEEP RESULT] OK | 87/108 erfolgreich | 5.0 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/30/style_04_l011_031.png
+
+[SWEEP 088/108] num_inference_steps=30 | Test 5/12: m000_007.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=30
+Global seed set to 42
+[TextCtrl progress] Inversion 1/31
+[TextCtrl progress] Inversion 10/31
+[TextCtrl progress] Inversion 20/31
+[TextCtrl progress] Inversion 30/31
+[TextCtrl progress] Inversion 31/31
+[TextCtrl progress] Generierung 1/31
+[TextCtrl progress] Generierung 10/31
+[TextCtrl progress] Generierung 20/31
+[TextCtrl progress] Generierung 30/31
+[TextCtrl progress] Generierung 31/31
+[SWEEP RESULT] OK | 88/108 erfolgreich | 5.1 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/30/style_05_m000_007.png
+
+[SWEEP 089/108] num_inference_steps=30 | Test 8/12: n009_010.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=30
+Global seed set to 42
+[TextCtrl progress] Inversion 1/31
+[TextCtrl progress] Inversion 10/31
+[TextCtrl progress] Inversion 20/31
+[TextCtrl progress] Inversion 30/31
+[TextCtrl progress] Inversion 31/31
+[TextCtrl progress] Generierung 1/31
+[TextCtrl progress] Generierung 10/31
+[TextCtrl progress] Generierung 20/31
+[TextCtrl progress] Generierung 30/31
+[TextCtrl progress] Generierung 31/31
+[SWEEP RESULT] OK | 89/108 erfolgreich | 5.1 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/30/style_08_n009_010.png
+
+[SWEEP 090/108] num_inference_steps=30 | Test 10/12: o016_100.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=30
+Global seed set to 42
+[TextCtrl progress] Inversion 1/31
+[TextCtrl progress] Inversion 10/31
+[TextCtrl progress] Inversion 20/31
+[TextCtrl progress] Inversion 30/31
+[TextCtrl progress] Inversion 31/31
+[TextCtrl progress] Generierung 1/31
+[TextCtrl progress] Generierung 10/31
+[TextCtrl progress] Generierung 20/31
+[TextCtrl progress] Generierung 30/31
+[TextCtrl progress] Generierung 31/31
+[SWEEP RESULT] OK | 90/108 erfolgreich | 5.0 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/30/style_10_o016_100.png
+
+[SWEEP 091/108] num_inference_steps=40 | Test 1/12: a000_000.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=40
+Global seed set to 42
+[TextCtrl progress] Inversion 1/41
+[TextCtrl progress] Inversion 10/41
+[TextCtrl progress] Inversion 20/41
+[TextCtrl progress] Inversion 30/41
+[TextCtrl progress] Inversion 40/41
+[TextCtrl progress] Inversion 41/41
+[TextCtrl progress] Generierung 1/41
+[TextCtrl progress] Generierung 10/41
+[TextCtrl progress] Generierung 20/41
+[TextCtrl progress] Generierung 30/41
+[TextCtrl progress] Generierung 40/41
+[TextCtrl progress] Generierung 41/41
+[SWEEP RESULT] OK | 91/108 erfolgreich | 6.7 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/40/style_01_a000_000.png
+
+[SWEEP 092/108] num_inference_steps=40 | Test 3/12: l007_042.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=40
+Global seed set to 42
+[TextCtrl progress] Inversion 1/41
+[TextCtrl progress] Inversion 10/41
+[TextCtrl progress] Inversion 20/41
+[TextCtrl progress] Inversion 30/41
+[TextCtrl progress] Inversion 40/41
+[TextCtrl progress] Inversion 41/41
+[TextCtrl progress] Generierung 1/41
+[TextCtrl progress] Generierung 10/41
+[TextCtrl progress] Generierung 20/41
+[TextCtrl progress] Generierung 30/41
+[TextCtrl progress] Generierung 40/41
+[TextCtrl progress] Generierung 41/41
+[SWEEP RESULT] OK | 92/108 erfolgreich | 6.6 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/40/style_03_l007_042.png
+
+[SWEEP 093/108] num_inference_steps=40 | Test 4/12: l011_031.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=40
+Global seed set to 42
+[TextCtrl progress] Inversion 1/41
+[TextCtrl progress] Inversion 10/41
+[TextCtrl progress] Inversion 20/41
+[TextCtrl progress] Inversion 30/41
+[TextCtrl progress] Inversion 40/41
+[TextCtrl progress] Inversion 41/41
+[TextCtrl progress] Generierung 1/41
+[TextCtrl progress] Generierung 10/41
+[TextCtrl progress] Generierung 20/41
+[TextCtrl progress] Generierung 30/41
+[TextCtrl progress] Generierung 40/41
+[TextCtrl progress] Generierung 41/41
+[SWEEP RESULT] OK | 93/108 erfolgreich | 6.7 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/40/style_04_l011_031.png
+
+[SWEEP 094/108] num_inference_steps=40 | Test 5/12: m000_007.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=40
+Global seed set to 42
+[TextCtrl progress] Inversion 1/41
+[TextCtrl progress] Inversion 10/41
+[TextCtrl progress] Inversion 20/41
+[TextCtrl progress] Inversion 30/41
+[TextCtrl progress] Inversion 40/41
+[TextCtrl progress] Inversion 41/41
+[TextCtrl progress] Generierung 1/41
+[TextCtrl progress] Generierung 10/41
+[TextCtrl progress] Generierung 20/41
+[TextCtrl progress] Generierung 30/41
+[TextCtrl progress] Generierung 40/41
+[TextCtrl progress] Generierung 41/41
+[SWEEP RESULT] OK | 94/108 erfolgreich | 6.6 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/40/style_05_m000_007.png
+
+[SWEEP 095/108] num_inference_steps=40 | Test 8/12: n009_010.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=40
+Global seed set to 42
+[TextCtrl progress] Inversion 1/41
+[TextCtrl progress] Inversion 10/41
+[TextCtrl progress] Inversion 20/41
+[TextCtrl progress] Inversion 30/41
+[TextCtrl progress] Inversion 40/41
+[TextCtrl progress] Inversion 41/41
+[TextCtrl progress] Generierung 1/41
+[TextCtrl progress] Generierung 10/41
+[TextCtrl progress] Generierung 20/41
+[TextCtrl progress] Generierung 30/41
+[TextCtrl progress] Generierung 40/41
+[TextCtrl progress] Generierung 41/41
+[SWEEP RESULT] OK | 95/108 erfolgreich | 6.6 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/40/style_08_n009_010.png
+
+[SWEEP 096/108] num_inference_steps=40 | Test 10/12: o016_100.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=40
+Global seed set to 42
+[TextCtrl progress] Inversion 1/41
+[TextCtrl progress] Inversion 10/41
+[TextCtrl progress] Inversion 20/41
+[TextCtrl progress] Inversion 30/41
+[TextCtrl progress] Inversion 40/41
+[TextCtrl progress] Inversion 41/41
+[TextCtrl progress] Generierung 1/41
+[TextCtrl progress] Generierung 10/41
+[TextCtrl progress] Generierung 20/41
+[TextCtrl progress] Generierung 30/41
+[TextCtrl progress] Generierung 40/41
+[TextCtrl progress] Generierung 41/41
+[SWEEP RESULT] OK | 96/108 erfolgreich | 6.6 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/40/style_10_o016_100.png
+
+[SWEEP 097/108] num_inference_steps=60 | Test 1/12: a000_000.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=60
+Global seed set to 42
+[TextCtrl progress] Inversion 1/61
+[TextCtrl progress] Inversion 10/61
+[TextCtrl progress] Inversion 20/61
+[TextCtrl progress] Inversion 30/61
+[TextCtrl progress] Inversion 40/61
+[TextCtrl progress] Inversion 50/61
+[TextCtrl progress] Inversion 60/61
+[TextCtrl progress] Inversion 61/61
+[TextCtrl progress] Generierung 1/61
+[TextCtrl progress] Generierung 10/61
+[TextCtrl progress] Generierung 20/61
+[TextCtrl progress] Generierung 30/61
+[TextCtrl progress] Generierung 40/61
+[TextCtrl progress] Generierung 50/61
+[TextCtrl progress] Generierung 60/61
+[TextCtrl progress] Generierung 61/61
+[SWEEP RESULT] OK | 97/108 erfolgreich | 9.8 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/60/style_01_a000_000.png
+
+[SWEEP 098/108] num_inference_steps=60 | Test 3/12: l007_042.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=60
+Global seed set to 42
+[TextCtrl progress] Inversion 1/61
+[TextCtrl progress] Inversion 10/61
+[TextCtrl progress] Inversion 20/61
+[TextCtrl progress] Inversion 30/61
+[TextCtrl progress] Inversion 40/61
+[TextCtrl progress] Inversion 50/61
+[TextCtrl progress] Inversion 60/61
+[TextCtrl progress] Inversion 61/61
+[TextCtrl progress] Generierung 1/61
+[TextCtrl progress] Generierung 10/61
+[TextCtrl progress] Generierung 20/61
+[TextCtrl progress] Generierung 30/61
+[TextCtrl progress] Generierung 40/61
+[TextCtrl progress] Generierung 50/61
+[TextCtrl progress] Generierung 60/61
+[TextCtrl progress] Generierung 61/61
+[SWEEP RESULT] OK | 98/108 erfolgreich | 9.8 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/60/style_03_l007_042.png
+
+[SWEEP 099/108] num_inference_steps=60 | Test 4/12: l011_031.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=60
+Global seed set to 42
+[TextCtrl progress] Inversion 1/61
+[TextCtrl progress] Inversion 10/61
+[TextCtrl progress] Inversion 20/61
+[TextCtrl progress] Inversion 30/61
+[TextCtrl progress] Inversion 40/61
+[TextCtrl progress] Inversion 50/61
+[TextCtrl progress] Inversion 60/61
+[TextCtrl progress] Inversion 61/61
+[TextCtrl progress] Generierung 1/61
+[TextCtrl progress] Generierung 10/61
+[TextCtrl progress] Generierung 20/61
+[TextCtrl progress] Generierung 30/61
+[TextCtrl progress] Generierung 40/61
+[TextCtrl progress] Generierung 50/61
+[TextCtrl progress] Generierung 60/61
+[TextCtrl progress] Generierung 61/61
+[SWEEP RESULT] OK | 99/108 erfolgreich | 9.8 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/60/style_04_l011_031.png
+
+[SWEEP 100/108] num_inference_steps=60 | Test 5/12: m000_007.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=60
+Global seed set to 42
+[TextCtrl progress] Inversion 1/61
+[TextCtrl progress] Inversion 10/61
+[TextCtrl progress] Inversion 20/61
+[TextCtrl progress] Inversion 30/61
+[TextCtrl progress] Inversion 40/61
+[TextCtrl progress] Inversion 50/61
+[TextCtrl progress] Inversion 60/61
+[TextCtrl progress] Inversion 61/61
+[TextCtrl progress] Generierung 1/61
+[TextCtrl progress] Generierung 10/61
+[TextCtrl progress] Generierung 20/61
+[TextCtrl progress] Generierung 30/61
+[TextCtrl progress] Generierung 40/61
+[TextCtrl progress] Generierung 50/61
+[TextCtrl progress] Generierung 60/61
+[TextCtrl progress] Generierung 61/61
+[SWEEP RESULT] OK | 100/108 erfolgreich | 9.8 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/60/style_05_m000_007.png
+
+[SWEEP 101/108] num_inference_steps=60 | Test 8/12: n009_010.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=60
+Global seed set to 42
+[TextCtrl progress] Inversion 1/61
+[TextCtrl progress] Inversion 10/61
+[TextCtrl progress] Inversion 20/61
+[TextCtrl progress] Inversion 30/61
+[TextCtrl progress] Inversion 40/61
+[TextCtrl progress] Inversion 50/61
+[TextCtrl progress] Inversion 60/61
+[TextCtrl progress] Inversion 61/61
+[TextCtrl progress] Generierung 1/61
+[TextCtrl progress] Generierung 10/61
+[TextCtrl progress] Generierung 20/61
+[TextCtrl progress] Generierung 30/61
+[TextCtrl progress] Generierung 40/61
+[TextCtrl progress] Generierung 50/61
+[TextCtrl progress] Generierung 60/61
+[TextCtrl progress] Generierung 61/61
+[SWEEP RESULT] OK | 101/108 erfolgreich | 9.8 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/60/style_08_n009_010.png
+
+[SWEEP 102/108] num_inference_steps=60 | Test 10/12: o016_100.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=60
+Global seed set to 42
+[TextCtrl progress] Inversion 1/61
+[TextCtrl progress] Inversion 10/61
+[TextCtrl progress] Inversion 20/61
+[TextCtrl progress] Inversion 30/61
+[TextCtrl progress] Inversion 40/61
+[TextCtrl progress] Inversion 50/61
+[TextCtrl progress] Inversion 60/61
+[TextCtrl progress] Inversion 61/61
+[TextCtrl progress] Generierung 1/61
+[TextCtrl progress] Generierung 10/61
+[TextCtrl progress] Generierung 20/61
+[TextCtrl progress] Generierung 30/61
+[TextCtrl progress] Generierung 40/61
+[TextCtrl progress] Generierung 50/61
+[TextCtrl progress] Generierung 60/61
+[TextCtrl progress] Generierung 61/61
+[SWEEP RESULT] OK | 102/108 erfolgreich | 9.8 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/60/style_10_o016_100.png
+
+[SWEEP 103/108] num_inference_steps=75 | Test 1/12: a000_000.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=75
+Global seed set to 42
+[TextCtrl progress] Inversion 1/76
+[TextCtrl progress] Inversion 10/76
+[TextCtrl progress] Inversion 20/76
+[TextCtrl progress] Inversion 30/76
+[TextCtrl progress] Inversion 40/76
+[TextCtrl progress] Inversion 50/76
+[TextCtrl progress] Inversion 60/76
+[TextCtrl progress] Inversion 70/76
+[TextCtrl progress] Inversion 76/76
+[TextCtrl progress] Generierung 1/76
+[TextCtrl progress] Generierung 10/76
+[TextCtrl progress] Generierung 20/76
+[TextCtrl progress] Generierung 30/76
+[TextCtrl progress] Generierung 40/76
+[TextCtrl progress] Generierung 50/76
+[TextCtrl progress] Generierung 60/76
+[TextCtrl progress] Generierung 70/76
+[TextCtrl progress] Generierung 76/76
+[SWEEP RESULT] OK | 103/108 erfolgreich | 12.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/75/style_01_a000_000.png
+
+[SWEEP 104/108] num_inference_steps=75 | Test 3/12: l007_042.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=75
+Global seed set to 42
+[TextCtrl progress] Inversion 1/76
+[TextCtrl progress] Inversion 10/76
+[TextCtrl progress] Inversion 20/76
+[TextCtrl progress] Inversion 30/76
+[TextCtrl progress] Inversion 40/76
+[TextCtrl progress] Inversion 50/76
+[TextCtrl progress] Inversion 60/76
+[TextCtrl progress] Inversion 70/76
+[TextCtrl progress] Inversion 76/76
+[TextCtrl progress] Generierung 1/76
+[TextCtrl progress] Generierung 10/76
+[TextCtrl progress] Generierung 20/76
+[TextCtrl progress] Generierung 30/76
+[TextCtrl progress] Generierung 40/76
+[TextCtrl progress] Generierung 50/76
+[TextCtrl progress] Generierung 60/76
+[TextCtrl progress] Generierung 70/76
+[TextCtrl progress] Generierung 76/76
+[SWEEP RESULT] OK | 104/108 erfolgreich | 12.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/75/style_03_l007_042.png
+
+[SWEEP 105/108] num_inference_steps=75 | Test 4/12: l011_031.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=75
+Global seed set to 42
+[TextCtrl progress] Inversion 1/76
+[TextCtrl progress] Inversion 10/76
+[TextCtrl progress] Inversion 20/76
+[TextCtrl progress] Inversion 30/76
+[TextCtrl progress] Inversion 40/76
+[TextCtrl progress] Inversion 50/76
+[TextCtrl progress] Inversion 60/76
+[TextCtrl progress] Inversion 70/76
+[TextCtrl progress] Inversion 76/76
+[TextCtrl progress] Generierung 1/76
+[TextCtrl progress] Generierung 10/76
+[TextCtrl progress] Generierung 20/76
+[TextCtrl progress] Generierung 30/76
+[TextCtrl progress] Generierung 40/76
+[TextCtrl progress] Generierung 50/76
+[TextCtrl progress] Generierung 60/76
+[TextCtrl progress] Generierung 70/76
+[TextCtrl progress] Generierung 76/76
+[SWEEP RESULT] OK | 105/108 erfolgreich | 12.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/75/style_04_l011_031.png
+
+[SWEEP 106/108] num_inference_steps=75 | Test 5/12: m000_007.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=75
+Global seed set to 42
+[TextCtrl progress] Inversion 1/76
+[TextCtrl progress] Inversion 10/76
+[TextCtrl progress] Inversion 20/76
+[TextCtrl progress] Inversion 30/76
+[TextCtrl progress] Inversion 40/76
+[TextCtrl progress] Inversion 50/76
+[TextCtrl progress] Inversion 60/76
+[TextCtrl progress] Inversion 70/76
+[TextCtrl progress] Inversion 76/76
+[TextCtrl progress] Generierung 1/76
+[TextCtrl progress] Generierung 10/76
+[TextCtrl progress] Generierung 20/76
+[TextCtrl progress] Generierung 30/76
+[TextCtrl progress] Generierung 40/76
+[TextCtrl progress] Generierung 50/76
+[TextCtrl progress] Generierung 60/76
+[TextCtrl progress] Generierung 70/76
+[TextCtrl progress] Generierung 76/76
+[SWEEP RESULT] OK | 106/108 erfolgreich | 12.3 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/75/style_05_m000_007.png
+
+[SWEEP 107/108] num_inference_steps=75 | Test 8/12: n009_010.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=75
+Global seed set to 42
+[TextCtrl progress] Inversion 1/76
+[TextCtrl progress] Inversion 10/76
+[TextCtrl progress] Inversion 20/76
+[TextCtrl progress] Inversion 30/76
+[TextCtrl progress] Inversion 40/76
+[TextCtrl progress] Inversion 50/76
+[TextCtrl progress] Inversion 60/76
+[TextCtrl progress] Inversion 70/76
+[TextCtrl progress] Inversion 76/76
+[TextCtrl progress] Generierung 1/76
+[TextCtrl progress] Generierung 10/76
+[TextCtrl progress] Generierung 20/76
+[TextCtrl progress] Generierung 30/76
+[TextCtrl progress] Generierung 40/76
+[TextCtrl progress] Generierung 50/76
+[TextCtrl progress] Generierung 60/76
+[TextCtrl progress] Generierung 70/76
+[TextCtrl progress] Generierung 76/76
+[SWEEP RESULT] OK | 107/108 erfolgreich | 12.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/75/style_08_n009_010.png
+
+[SWEEP 108/108] num_inference_steps=75 | Test 10/12: o016_100.png
+  Parameter: guidance=2.0 start_step=24 start_layer=10 steps=75
+Global seed set to 42
+[TextCtrl progress] Inversion 1/76
+[TextCtrl progress] Inversion 10/76
+[TextCtrl progress] Inversion 20/76
+[TextCtrl progress] Inversion 30/76
+[TextCtrl progress] Inversion 40/76
+[TextCtrl progress] Inversion 50/76
+[TextCtrl progress] Inversion 60/76
+[TextCtrl progress] Inversion 70/76
+[TextCtrl progress] Inversion 76/76
+[TextCtrl progress] Generierung 1/76
+[TextCtrl progress] Generierung 10/76
+[TextCtrl progress] Generierung 20/76
+[TextCtrl progress] Generierung 30/76
+[TextCtrl progress] Generierung 40/76
+[TextCtrl progress] Generierung 50/76
+[TextCtrl progress] Generierung 60/76
+[TextCtrl progress] Generierung 70/76
+[TextCtrl progress] Generierung 76/76
+[SWEEP RESULT] OK | 108/108 erfolgreich | 12.2 s | /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/results/num_inference_steps/75/style_10_o016_100.png
+
+========== KONTAKTBOGEN ERSTELLEN ==========
+[SHEET] /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/contact_guidance_scale.jpg
+[SHEET] /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/contact_start_step.jpg
+[SHEET] /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/contact_starting_layer.jpg
+[SHEET] /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/contact_num_inference_steps.jpg
+
+========== SWEEP ABGESCHLOSSEN ==========
+Erfolgreiche Generierungen: 108 / 108
+Fehler: 0
+Ergebnisse: /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552
+Manifest: /mnt/p5-modeltests/TextCtrl/style_sweep_20261021_212552/sweep_results.tsv
+Kontaktbögen: contact_*.jpg

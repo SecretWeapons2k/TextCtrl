@@ -1,0 +1,64 @@
+Lade TextCtrl-Modell ...
+Loaded state_dict from [weights/sd/unet/diffusion_pytorch_model.safetensors]
+AutoencoderKL has 83.65 M params.
+ControlUNetModel has 859.52 M params.
+LabelEncoder has 66.24 M params.
+Loaded model config from [configs/inference.yaml]
+Loaded state_dict from [weights/model.pth]
+Fehlende Schlüssel: 394
+Unerwartete Schlüssel: 0
+
+[1/12] style_01_a000_000.png | Ziel=HELLO | Seed=42
+Global seed set to 42
+MIOpen(HIP): Warning [ParseAndLoadDb] File is unreadable: "/mnt/p5-modeltests/TextCtrl/.venv-gfx1030/lib/python3.11/site-packages/_rocm_sdk_libraries/share/miopen/db/gfx1030_40.HIP.fdb.txt"
+Gespeichert: /mnt/p5-modeltests/TextCtrl/style_benchmark_12_result/style_01_a000_000.png | Dauer: 8.5 s
+
+[2/12] style_02_l002_000.png | Ziel=HELLO | Seed=42
+Global seed set to 42
+Gespeichert: /mnt/p5-modeltests/TextCtrl/style_benchmark_12_result/style_02_l002_000.png | Dauer: 7.9 s
+
+[3/12] style_03_l007_042.png | Ziel=HELLO | Seed=42
+Global seed set to 42
+Gespeichert: /mnt/p5-modeltests/TextCtrl/style_benchmark_12_result/style_03_l007_042.png | Dauer: 7.9 s
+
+[4/12] style_04_l011_031.png | Ziel=HELLO | Seed=42
+Global seed set to 42
+Gespeichert: /mnt/p5-modeltests/TextCtrl/style_benchmark_12_result/style_04_l011_031.png | Dauer: 7.9 s
+
+[5/12] style_05_m000_007.png | Ziel=HELLO | Seed=42
+Global seed set to 42
+Gespeichert: /mnt/p5-modeltests/TextCtrl/style_benchmark_12_result/style_05_m000_007.png | Dauer: 8.0 s
+
+[6/12] style_06_m003_013.png | Ziel=HELLO | Seed=42
+Global seed set to 42
+Gespeichert: /mnt/p5-modeltests/TextCtrl/style_benchmark_12_result/style_06_m003_013.png | Dauer: 8.0 s
+
+[7/12] style_07_m006_013.png | Ziel=HELLO | Seed=42
+Global seed set to 42
+Gespeichert: /mnt/p5-modeltests/TextCtrl/style_benchmark_12_result/style_07_m006_013.png | Dauer: 8.0 s
+
+[8/12] style_08_n009_010.png | Ziel=HELLO | Seed=42
+Global seed set to 42
+Gespeichert: /mnt/p5-modeltests/TextCtrl/style_benchmark_12_result/style_08_n009_010.png | Dauer: 8.0 s
+
+[9/12] style_09_o016_020.png | Ziel=HELLO | Seed=42
+Global seed set to 42
+Gespeichert: /mnt/p5-modeltests/TextCtrl/style_benchmark_12_result/style_09_o016_020.png | Dauer: 8.0 s
+
+[10/12] style_10_o016_100.png | Ziel=HELLO | Seed=42
+Global seed set to 42
+Gespeichert: /mnt/p5-modeltests/TextCtrl/style_benchmark_12_result/style_10_o016_100.png | Dauer: 8.0 s
+
+[11/12] style_11_o018_014.png | Ziel=HELLO | Seed=42
+Global seed set to 42
+Gespeichert: /mnt/p5-modeltests/TextCtrl/style_benchmark_12_result/style_11_o018_014.png | Dauer: 8.0 s
+
+[12/12] style_12_s001_005.png | Ziel=HELLO | Seed=42
+Global seed set to 42
+Gespeichert: /mnt/p5-modeltests/TextCtrl/style_benchmark_12_result/style_12_s001_005.png | Dauer: 8.0 s
+
+Erstelle Kontaktbogen ...
+
+ALLE TESTS ABGESCHLOSSEN.
+Ergebnisse: /mnt/p5-modeltests/TextCtrl/style_benchmark_12_result
+Kontaktbogen: /mnt/p5-modeltests/TextCtrl/style_benchmark_12_comparison.jpg

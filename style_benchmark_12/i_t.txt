@@ -1,0 +1,12 @@
+style_01_a000_000.png HELLO
+style_02_l002_000.png HELLO
+style_03_l007_042.png HELLO
+style_04_l011_031.png HELLO
+style_05_m000_007.png HELLO
+style_06_m003_013.png HELLO
+style_07_m006_013.png HELLO
+style_08_n009_010.png HELLO
+style_09_o016_020.png HELLO
+style_10_o016_100.png HELLO
+style_11_o018_014.png HELLO
+style_12_s001_005.png HELLO

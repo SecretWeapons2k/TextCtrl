@@ -1,0 +1,4 @@
+weights/
+.venv-gfx1030/
+__pycache__/
+*.pyc
