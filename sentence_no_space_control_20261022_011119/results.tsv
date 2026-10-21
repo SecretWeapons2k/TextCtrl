@@ -1,0 +1,5 @@
+style	source_file	source_text	target_text	target_length	seed	guidance_scale	start_step	starting_layer	inference_steps	status	duration_seconds	output_file	error
+style_10_o016_100	style_10_o016_100.png	きゃああっ	WENEEDTOGONOW	13	42	2.0	24	10	50	ok	8.526	/mnt/p5-modeltests/TextCtrl/sentence_no_space_control_20261022_011119/results/style_10_o016_100/weneedtogonow.png	
+style_10_o016_100	style_10_o016_100.png	きゃああっ	WENEEDTOLEAVENOW	16	42	2.0	24	10	50	ok	7.934	/mnt/p5-modeltests/TextCtrl/sentence_no_space_control_20261022_011119/results/style_10_o016_100/weneedtoleavenow.png	
+style_11_o018_014	style_11_o018_014.png	本当です	WENEEDTOGONOW	13	42	2.0	24	10	50	ok	7.953	/mnt/p5-modeltests/TextCtrl/sentence_no_space_control_20261022_011119/results/style_11_o018_014/weneedtogonow.png	
+style_11_o018_014	style_11_o018_014.png	本当です	WENEEDTOLEAVENOW	16	42	2.0	24	10	50	ok	7.969	/mnt/p5-modeltests/TextCtrl/sentence_no_space_control_20261022_011119/results/style_11_o018_014/weneedtoleavenow.png	
