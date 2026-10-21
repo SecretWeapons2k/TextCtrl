@@ -1,0 +1,365 @@
+#!/usr/bin/env python3
+"""Foreground TextCtrl test: progressively longer English text in fixed text crops.
+
+Runs six new model generations (three target strings x two styles). Existing HELLO
+baselines are included in the contact sheet as controls, so HELLO is not regenerated.
+This script does not modify source images, model weights, or existing environments.
+"""
+from __future__ import annotations
+
+import argparse
+import csv
+import gc
+import os
+import sys
+import time
+import traceback
+from datetime import datetime
+from pathlib import Path
+
+import numpy as np
+import torch
+from PIL import Image, ImageDraw, ImageFont
+from pytorch_lightning import seed_everything
+
+
+SEED = 42
+GUIDANCE_SCALE = 2.0
+START_STEP = 24
+STARTING_LAYER = 10
+INFERENCE_STEPS = 50
+
+# HELLO is already available as a baseline. Only the three longer strings
+# require new generations. Every new string stays below the monitor's ~25-char
+# sequence limit, counting spaces.
+TARGETS = [
+    "HELLO THERE",          # 11 characters
+    "WE NEED TO GO NOW",    # 17 characters
+    "WE NEED TO LEAVE NOW", # 20 characters
+]
+
+STYLES = [
+    {
+        "label": "style_10_o016_100",
+        "file": "style_10_o016_100.png",
+    },
+    {
+        "label": "style_11_o018_014",
+        "file": "style_11_o018_014.png",
+    },
+]
+
+
+def read_source_texts(path: Path) -> dict[str, str]:
+    mapping: dict[str, str] = {}
+    with path.open("r", encoding="utf-8") as handle:
+        for line_number, raw in enumerate(handle, 1):
+            line = raw.rstrip("\r\n")
+            if not line.strip():
+                continue
+            pieces = line.split(maxsplit=1)
+            if len(pieces) != 2:
+                raise ValueError(f"Ungültige Zeile in {path}:{line_number}: {line!r}")
+            mapping[pieces[0]] = pieces[1]
+    return mapping
+
+
+def make_monitor_config() -> dict:
+    return {
+        "max_length": 25,
+        "loss_weight": 1.0,
+        "attention": "position",
+        "backbone": "transformer",
+        "backbone_ln": 3,
+        "checkpoint": "src/module/abinet/data/vision_model.pth",
+        "charset_path": "src/module/abinet/data/charset_36.txt",
+    }
+
+
+def paste_fit(canvas: Image.Image, image_path: Path, box: tuple[int, int, int, int]) -> None:
+    x0, y0, x1, y1 = box
+    with Image.open(image_path) as im:
+        fitted = im.convert("RGB")
+    fitted.thumbnail((x1 - x0, y1 - y0), Image.Resampling.LANCZOS)
+    px = x0 + ((x1 - x0) - fitted.width) // 2
+    py = y0 + ((y1 - y0) - fitted.height) // 2
+    canvas.paste(fitted, (px, py))
+
+
+def build_contact_sheet(
+    output_dir: Path,
+    root: Path,
+    source_texts: dict[str, str],
+) -> Path:
+    margin = 14
+    label_h = 30
+    row_h = 166
+    cell_w = 520
+    sheet_w = margin * 2 + cell_w * 2 + 20
+    sheet_h = margin + label_h + 24 + row_h * len(STYLES) * 4 + margin
+    sheet = Image.new("RGB", (sheet_w, sheet_h), (236, 236, 236))
+    draw = ImageDraw.Draw(sheet)
+    font = ImageFont.load_default()
+
+    draw.text(
+        (margin, margin),
+        "TextCtrl sentence-length test — fixed text-crop dimensions",
+        fill=(15, 15, 15), font=font,
+    )
+    header_y = margin + label_h
+    draw.text((margin + 8, header_y), "STYLE REFERENCE", fill=(15, 15, 15), font=font)
+    draw.text((margin + cell_w + 20, header_y), "GENERATED / EXISTING HELLO BASELINE", fill=(15, 15, 15), font=font)
+
+    row = 0
+    for style in STYLES:
+        filename = style["file"]
+        source_path = root / "style_benchmark_12" / "i_s" / filename
+        baseline_path = root / "style_sweep_20261021_212552" / "baseline" / filename
+        source_text = source_texts[filename]
+        targets = [("HELLO", baseline_path, True)]
+        for target in TARGETS:
+            slug = target.lower().replace(" ", "_")
+            generated_path = output_dir / "results" / style["label"] / f"{slug}.png"
+            targets.append((target, generated_path, False))
+
+        for target_text, output_path, is_baseline in targets:
+            y0 = header_y + 24 + row * row_h
+            draw.rectangle(
+                (margin, y0, sheet_w - margin, y0 + row_h - 6),
+                fill=(250, 250, 250),
+            )
+            suffix = "(existing baseline)" if is_baseline else "(new generation)"
+            draw.text(
+                (margin + 8, y0 + 5),
+                f"{style['label']} | target={target_text!r} | n={len(target_text)} {suffix}",
+                fill=(25, 25, 25), font=font,
+            )
+            image_y0 = y0 + 24
+            image_y1 = y0 + row_h - 12
+            paste_fit(sheet, source_path, (margin + 8, image_y0, margin + cell_w - 8, image_y1))
+            if output_path.is_file():
+                paste_fit(
+                    sheet,
+                    output_path,
+                    (margin + cell_w + 20, image_y0, margin + cell_w * 2 + 12, image_y1),
+                )
+            else:
+                draw.text(
+                    (margin + cell_w + 35, image_y0 + 36),
+                    f"MISSING OUTPUT: {output_path.name}",
+                    fill=(180, 20, 20), font=font,
+                )
+            row += 1
+
+    path = output_dir / "sentence_length_contact_sheet.png"
+    sheet.save(path)
+    return path
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(
+        description="Foreground TextCtrl test for longer strings within existing fixed text crops."
+    )
+    parser.add_argument(
+        "--root",
+        type=Path,
+        default=Path("/mnt/p5-modeltests/TextCtrl"),
+        help="TextCtrl checkout directory (default: /mnt/p5-modeltests/TextCtrl)",
+    )
+    parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=None,
+        help="Optional new output directory. Must not already exist.",
+    )
+    args = parser.parse_args()
+    root = args.root.expanduser().resolve()
+
+    print("========== PREFLIGHT (no model loaded yet) ==========")
+    print(f"Repository: {root}")
+    if not root.is_dir():
+        print(f"FEHLER: Repo-Ordner fehlt: {root}")
+        return 2
+
+    required = [
+        root / "configs" / "inference.yaml",
+        root / "weights" / "model.pth",
+        root / "style_benchmark_12" / "i_s.txt",
+        root / "style_sweep_20261021_212552" / "baseline" / STYLES[0]["file"],
+        root / "style_sweep_20261021_212552" / "baseline" / STYLES[1]["file"],
+    ]
+    for style in STYLES:
+        required.append(root / "style_benchmark_12" / "i_s" / style["file"])
+    missing = [str(path) for path in required if not path.is_file()]
+    if missing:
+        print("FEHLER: Benötigte Dateien fehlen:")
+        for item in missing:
+            print(f"  - {item}")
+        return 2
+
+    if not torch.cuda.is_available():
+        print("FEHLER: torch.cuda.is_available() ist False. Abbruch vor Modell-/CPU-Inferenz.")
+        return 2
+
+    if args.output_dir is None:
+        stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        output_dir = root / f"sentence_length_test_{stamp}"
+    else:
+        output_dir = args.output_dir.expanduser().resolve()
+    if output_dir.exists():
+        print(f"FEHLER: Ausgabeordner existiert bereits: {output_dir}")
+        print("Es wird nichts überschrieben. Starte erneut ohne --output-dir oder gib einen neuen Pfad an.")
+        return 2
+
+    source_texts = read_source_texts(root / "style_benchmark_12" / "i_s.txt")
+    for style in STYLES:
+        if style["file"] not in source_texts:
+            print(f"FEHLER: Kein Quelltext für {style['file']} in i_s.txt")
+            return 2
+
+    print(f"GPU: {torch.cuda.get_device_name(0)}")
+    try:
+        free_bytes, total_bytes = torch.cuda.mem_get_info()
+        print(f"GPU-Speicher frei/gesamt: {free_bytes / 1024**3:.1f}/{total_bytes / 1024**3:.1f} GiB")
+    except Exception:
+        print("GPU-Speicherabfrage nicht verfügbar; die Inferenz kann trotzdem fortgesetzt werden.")
+    print("Modellläufe: 6 (2 Stile × 3 neue Textlängen)")
+    print("Kontrolle: vorhandene HELLO-Baselines; HELLO wird nicht erneut generiert.")
+    print("Zieltextlängen:", ", ".join(f"{len(t)}:{t!r}" for t in TARGETS))
+    print("Parameter: seed=42, guidance=2.0, start_step=24, starting_layer=10, steps=50")
+    print("Spaces bleiben im Zieltext; die interne ABINet-Zeichenliste enthält allerdings keine reguläre Space-Klasse.")
+    print("Der Modellfortschritt bleibt im Vordergrund sichtbar. Keine Background-Jobs.")
+    answer = input("Mit den 6 GPU-Inferenzläufen beginnen? Tippe JA: ").strip()
+    if answer != "JA":
+        print("Abgebrochen, bevor das Modell geladen oder eine Ausgabe erzeugt wurde.")
+        return 0
+
+    os.chdir(root)
+    # Imports delayed until preflight/explicit confirmation.
+    from inference import load_image
+    from utils import create_model, load_state_dict
+    from src.MuSA.GaMuSA import GaMuSA
+    from src.MuSA.GaMuSA_app import text_editing
+
+    output_dir.mkdir(parents=True, exist_ok=False)
+    results_dir = output_dir / "results"
+    results_dir.mkdir()
+    manifest_path = output_dir / "results.tsv"
+    manifest_columns = [
+        "style", "source_file", "source_text", "target_text", "target_length",
+        "seed", "guidance_scale", "start_step", "starting_layer", "inference_steps",
+        "status", "duration_seconds", "output_file", "error",
+    ]
+
+    def record(writer, handle, **row):
+        writer.writerow(row)
+        handle.flush()
+
+    print("\n========== MODELL LADEN (einmalig) ==========")
+    print("Checkpoint wird auf CPU geladen und anschließend in das GPU-Modell übernommen.", flush=True)
+    model = create_model("configs/inference.yaml").cuda()
+    checkpoint = load_state_dict("weights/model.pth", location="cpu")
+    load_result = model.load_state_dict(checkpoint, strict=False)
+    del checkpoint
+    print(
+        "Checkpoint geladen | fehlende Schlüssel:", len(load_result.missing_keys),
+        "| unerwartete Schlüssel:", len(load_result.unexpected_keys), flush=True,
+    )
+    model.eval()
+    monitor_cfg = {
+        "max_length": 25,
+        "loss_weight": 1.0,
+        "attention": "position",
+        "backbone": "transformer",
+        "backbone_ln": 3,
+        "checkpoint": "src/module/abinet/data/vision_model.pth",
+        "charset_path": "src/module/abinet/data/charset_36.txt",
+    }
+    pipeline = GaMuSA(model, monitor_cfg)
+
+    run_specs = []
+    for style in STYLES:
+        for target in TARGETS:
+            run_specs.append((style, target))
+
+    try:
+        with manifest_path.open("w", encoding="utf-8", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=manifest_columns, delimiter="\t")
+            writer.writeheader()
+            handle.flush()
+
+            for index, (style, target_text) in enumerate(run_specs, 1):
+                filename = style["file"]
+                input_path = root / "style_benchmark_12" / "i_s" / filename
+                source_text = source_texts[filename]
+                slug = target_text.lower().replace(" ", "_")
+                output_path = results_dir / style["label"] / f"{slug}.png"
+                output_path.parent.mkdir(parents=True, exist_ok=True)
+                with Image.open(input_path) as im:
+                    original_size = im.size
+
+                print("\n" + "=" * 72, flush=True)
+                print(
+                    f"[RUN {index}/{len(run_specs)}] {style['label']} | "
+                    f"target={target_text!r} | Länge={len(target_text)} | "
+                    f"Ausgabegröße={original_size[0]}x{original_size[1]}",
+                    flush=True,
+                )
+                print(
+                    f"Quelltext={source_text!r} | Ziel={output_path}", flush=True
+                )
+                started = time.perf_counter()
+                seed_everything(SEED)
+                source_image = load_image(str(input_path))
+                style_image = load_image(str(input_path))
+                result_images = text_editing(
+                    pipeline,
+                    source_image,
+                    style_image,
+                    source_text,
+                    target_text,
+                    starting_layer=STARTING_LAYER,
+                    start_step=START_STEP,
+                    ddim_steps=INFERENCE_STEPS,
+                    scale=GUIDANCE_SCALE,
+                )
+                generated = np.clip(result_images[1] * 255.0, 0, 255).astype(np.uint8)
+                result_image = Image.fromarray(generated).resize(
+                    original_size, Image.Resampling.LANCZOS
+                )
+                result_image.save(output_path)
+                elapsed = time.perf_counter() - started
+                print(f"[GESPEICHERT] {output_path} | {elapsed:.1f} s", flush=True)
+                record(
+                    writer, handle,
+                    style=style["label"], source_file=filename,
+                    source_text=source_text, target_text=target_text,
+                    target_length=len(target_text), seed=SEED,
+                    guidance_scale=GUIDANCE_SCALE, start_step=START_STEP,
+                    starting_layer=STARTING_LAYER, inference_steps=INFERENCE_STEPS,
+                    status="ok", duration_seconds=round(elapsed, 3),
+                    output_file=str(output_path), error="",
+                )
+                del source_image, style_image, result_images, generated, result_image
+                gc.collect()
+                torch.cuda.empty_cache()
+
+        print("\n========== KONTAKTBLATT ==========")
+        sheet = build_contact_sheet(output_dir, root, source_texts)
+        print(f"Kontaktblatt: {sheet}")
+        print(f"Manifest:     {manifest_path}")
+        print(f"Ergebnisse:   {output_dir}")
+        print("Fertig: 6 neue Modellläufe. Es wurden keine Quelldateien verändert.")
+        return 0
+    except Exception:
+        print("\nFEHLER: Test angehalten. Bereits gespeicherte Ausgaben und TSV bleiben erhalten.", flush=True)
+        traceback.print_exc()
+        return 1
+
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except KeyboardInterrupt:
+        print("\nVom Benutzer abgebrochen. Bereits gespeicherte Ausgaben bleiben erhalten.", flush=True)
+        raise SystemExit(130)
